@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- 色変更に使うライブラリで用意されているCSSを導入 https://github.com/bebraw/colorjoe -->
+  <link rel="stylesheet" href="css/colorjoe.css">
+  <title>お絵かきアプリ</title>
+</head>
+<body>
+  <h1>お絵かきアプリ</h1>
+  <div>
+    <canvas
+      id="draw-area"
+      width="400px"
+      height="400px"
+      style="border: 1px solid #000000;"></canvas>
+    <!-- 色を選択できるカラーパレットを用意する。 -->
+    <span id="color-palette"></span>
+  </div>
+  <div>
+    <button id="clear-button">全消し</button>
+  </div>
+  <div>
+    <button id="eraser-button">消しゴムモード</button>
+  </div>
+  <!-- 色変更に使うライブラリを導入 https://github.com/bebraw/colorjoe -->
+  <script src="./js/colorjoe.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
